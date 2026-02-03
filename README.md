@@ -1,8 +1,7 @@
 # Первая лабараторная работа по JS
 
 ## Создайте файл index.html и вставьте в него следующий код.
-`
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
  <head>
    <title>Привет, мир!</title>
@@ -18,5 +17,4 @@
 
 
  </body>
-</html>
-`
+</html>`
