@@ -1,7 +1,7 @@
 # Первая лабараторная работа по JS
 
 # Задагте 1;
-![Напишите команду console.log("Hello, world!"); и нажмите Enter.](Task1/Hello_World_js.pngg)
+![Напишите команду console.log("Hello, world!"); и нажмите Enter.](Task1/Hello_World_js.png)
 ![Запишите в консоли 2 + 3 и посмотрите результат.](Task1/2+3.png)
 
 ## Создайте файл index.html и вставьте в него следующий код.
