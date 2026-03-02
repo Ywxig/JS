@@ -8,3 +8,6 @@
 
 ### Лабараторная работа 1;
 https://github.com/Ywxig/JS/tree/lab_1
+
+### Лабараторная работа 2;
+https://github.com/Ywxig/JS/tree/lab2
