@@ -12,5 +12,5 @@ https://github.com/Ywxig/JS/tree/lab_1
 ### Лабараторная работа 2;
 https://github.com/Ywxig/JS/tree/lab2
 
-### абараторная работа 3;
+### Лабараторная работа 3;
 https://github.com/Ywxig/JS/tree/lab3
