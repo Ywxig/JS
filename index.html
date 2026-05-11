@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Учёт личных финансов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+
+  <header class="header">
+    <div class="header-balance">
+      <span class="balance-label">Баланс</span>
+      <span id="total-display" class="balance-amount">0.00 $</span>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Форма добавления транзакции -->
+    <section class="card form-card">
+      <h2 class="card-title">Новая транзакция</h2>
+      <form id="transaction-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="amount">Сумма ($)</label>
+            <input type="number" id="amount" placeholder="+500 или -200" step="0.01" />
+            <span class="error-msg" id="amount-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="category">Категория</label>
+            <select id="category">
+              <option value="">— выберите —</option>
+              <option value="Зарплата">💼 Зарплата</option>
+              <option value="Еда">🍔 Еда</option>
+              <option value="Транспорт">🚌 Транспорт</option>
+              <option value="Развлечения">🎮 Развлечения</option>
+              <option value="Здоровье">💊 Здоровье</option>
+              <option value="Одежда">👗 Одежда</option>
+              <option value="ЖКХ">🏠 ЖКХ</option>
+              <option value="Прочее">📦 Прочее</option>
+            </select>
+            <span class="error-msg" id="category-error"></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="description">Описание</label>
+          <input type="text" id="description" placeholder="Подробное описание транзакции..." />
+          <span class="error-msg" id="description-error"></span>
+        </div>
+        <button type="submit" class="btn-add">+ Добавить транзакцию</button>
+      </form>
+    </section>
+
+    <!-- Таблица транзакций -->
+    <section class="card table-card">
+      <h2 class="card-title">История транзакций</h2>
+      <div class="table-wrapper">
+        <table id="transactions-table">
+          <thead>
+            <tr>
+              <th>Дата и Время</th>
+              <th>Категория</th>
+              <th>Описание</th>
+              <th>Сумма</th>
+              <th>Действие</th>
+            </tr>
+          </thead>
+          <tbody id="transactions-body">
+            <tr class="empty-row" id="empty-row">
+              <td colspan="5">Транзакций пока нет — добавьте первую!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Подробное описание транзакции -->
+    <section class="card detail-card" id="detail-card">
+      <h2 class="card-title">Детали транзакции</h2>
+      <div id="detail-content" class="detail-content">
+        <p class="detail-placeholder">Кликните на строку таблицы для просмотра подробного описания</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="src/index.js"></script>
+</body>
+</html>
