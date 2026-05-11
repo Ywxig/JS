@@ -18,3 +18,6 @@ https://github.com/Ywxig/JS/tree/lab3
 ### Лабараторная работа 4;
 https://github.com/Ywxig/JS/tree/lab4
 
+### Лабараторная работа 5;
+https://github.com/Ywxig/JS/tree/lab5
+
