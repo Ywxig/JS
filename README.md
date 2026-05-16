@@ -1,4 +1,4 @@
-# 🔥 RUINS — документация
+# RUINS — документация
 
 > Браузерный roguelike-dungeon crawler на ванильном JavaScript с ES-модулями.  
 > Управление: **WASD** или **стрелки**.
